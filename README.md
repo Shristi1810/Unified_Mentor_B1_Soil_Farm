@@ -1,4 +1,4 @@
-This project is based on MERN stack web application which is used for selling organic soils , made organic soils, and also used to track them... This unique project was assigned by #UNIFIED MENTOR team during my internship.
+This project is based on MERN stack web application which is used for selling organic soils , made organic soils, and also used to track them... This unique project was assigned by <b>UNIFIED MENTOR</b> team during my internship.
 
 <h1 align="center">Soil Farming</h1>
 <br>
