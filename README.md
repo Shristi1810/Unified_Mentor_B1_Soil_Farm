@@ -47,3 +47,5 @@ The MERN Stack is a popular full-stack development solution that combines MongoD
 *Node.js:* A JavaScript runtime based on Chrome's V8 engine, enabling server-side JavaScript execution. It focuses on performance, making it perfect for scalable and efficient back-end development.
 
 
+## Preparation:
+https://github.com/users/Shristi1810/projects/2/views/1?pane=info
