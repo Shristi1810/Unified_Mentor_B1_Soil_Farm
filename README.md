@@ -17,6 +17,8 @@ A dynamic website for displaying the available organic products at <b>Soil Farms
 | MongoDB                 | Database   |
 | Render                  | Hosting    |
 
+## The Pages:
+
 ## Admin Dashboard
 ## Admin Panel
 - The admin panel view is meant to handle all the orders, products, and registered users
