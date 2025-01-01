@@ -19,7 +19,7 @@ A dynamic website for displaying the available organic products at <b>Soil Farms
 
 ## The Pages:
 
-## Admin Dashboard
+#Admin Dashboard
 ## Admin Panel
 - The admin panel view is meant to handle all the orders, products, and registered users
 - An order can be marked as delivered, after the user has completed the payment
