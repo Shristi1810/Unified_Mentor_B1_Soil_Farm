@@ -1,0 +1,725 @@
+/* Customize the scroll bar for the entire project */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scroll bar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the scroll thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scroll thumb on hover */
+}
+
+
+main {
+  min-height: 80vh;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: #f8e825;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.product-title {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+}
+.product-rating {
+  margin-top: -16px; /* Adjust the margin as needed to control the spacing */
+}
+
+
+.product-description {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+
+.latest-products-title {
+  font-family: Arapey, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-style: bold;
+  font-size: 2.1rem;
+  letter-spacing: -.5px;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+
+table td,
+table th {
+  text-align: center;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-image-container {
+  height: 400px; /* Adjust the height as per your requirement */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-image {
+  object-fit: contain;
+  max-height: 100%;
+  width: auto;
+}
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.carousel-image.round-image {
+  border-radius: 17%;
+}
+.blurred-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(3px); /* Adjust the blur strength as needed */
+  z-index: -1;
+}
+
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icon {
+  margin-right: 10px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  cursor: zoom-in;
+}
+
+.navbar {
+  background-color: #77dedb;
+  padding: 10px;
+}
+
+.logo {
+  height: 50px;
+  background-color: transparent;
+}
+.selected-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center the image */
+  margin-bottom: 16px; /* Add spacing below the image */
+}
+
+.user-info {
+  display: flex;
+  align-items: center; /* Vertically align the content */
+}
+
+/* Your existing .user-name class */
+.user-name {
+  margin-right: 10px; /* Add spacing between the user's name and the image */
+}
+
+/* Add the following styles to adjust spacing between name and image in user dropdown */
+.nav-dropdown .user-image {
+  margin-right: 10px; /* Adjust this value to match the desired spacing */
+}
+
+/* Adjust the padding-right of the NavDropdown to match the spacing */
+.nav-dropdown {
+  padding-right: 15px; /* Adjust this value to match the desired spacing */
+}
+
+
+.selected-image {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 50%; /* Make the image round */
+}
+.selected-image-about {
+  margin-top: 3rem;
+  max-width: 150%;
+  max-height: 350px;
+  border-radius: 50%; /* Make the image round */
+}
+
+.centered {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.nav-link {
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-icon {
+  margin-right: 5px;
+}
+
+.cart-badge {
+  margin-left: 5px;
+}
+
+.nav-dropdown {
+  background-color: #77dedb;
+  border: none;
+}
+
+.side-cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.873);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  z-index: 9999;
+  overflow-y: auto;
+  backdrop-filter: blur(200px); /* Apply the blur effect */
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  scrollbar-width: thin;
+  scrollbar-color: #0b7cd8 transparent;
+}
+@media (max-width: 768px) {
+  .side-cart {
+    width: 100%; /* Make the cart full width on mobile */
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  }
+}
+.side-cart::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+  background-color: transparent;
+}
+
+.side-cart::-webkit-scrollbar-thumb {
+  background-color: #0b7cd8;
+  border-radius: 4px; /* Apply rounded corners */
+}
+
+.side-cart::-webkit-scrollbar-thumb:hover {
+  background-color: #009688; /* Change color on hover */
+}
+
+.side-cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.side-cart-header h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.close-button {
+  font-size: 24px;
+  color: #666;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #009688;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain; /* or object-fit: scale-down; */
+  margin-right: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust the box shadow to your preference */
+}
+
+
+.cart-item h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.cart-item p {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.delete-button {
+  background-color: black;
+  color: white;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #009688;
+}
+
+
+
+
+.cart-total {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.cart-total p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.free-shipping {
+  color: #009688;
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid #009688;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.free-shipping.congrats {
+  background-color: #009688;
+  color: #fff;
+}
+
+.free-shipping.add-items {
+  background-color: #fff;
+  color: #009688;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.cart-buttons a {
+  flex: 1;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  background-color: #0b7cd8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.cart-buttons a:last-child {
+  margin-right: 0;
+}
+.cart-buttons a:hover {
+  background-color: #868dfb; /* New background color on hover */
+}
+
+.cart-buttons a:hover:active {
+  background-color: #0a6e96; /* New background color when active (clicked) */
+}
+
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+body.side-cart-open .product-screen {
+  filter: brightness(0.5);
+}
+
+body.side-cart-open {
+  overflow: hidden;
+}
+
+.side-cart.loading {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.side-cart.loading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-cart.loading::after::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc; /* Add a loading spinner */
+  border-top-color: #333; /* Customize spinner color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.side-cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  font-size: 18px;
+  color: #888;
+}
+
+.side-cart-empty .empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.side-cart-empty .empty-text {
+  font-weight: bold;
+}
+
+
+.nav-dropdown .dropdown-menu,
+.nav-dropdown-admin .dropdown-menu {
+  background-color: #212529;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.nav-dropdown .dropdown-item,
+.nav-dropdown-admin .dropdown-item {
+  color: #fff;
+}
+
+.nav-dropdown .dropdown-item:hover,
+.nav-dropdown-admin .dropdown-item:hover {
+  background-color: #868dfb;
+}
+
+.nav-dropdown .dropdown-divider,
+.nav-dropdown-admin .dropdown-divider {
+  border-color: #888;
+}
+
+.main-title {
+  font-size: 2.1rem;
+  width: 100%; /* Set the width to 100% to ensure it takes the full width */
+  position: static;
+  font-weight: bold;
+}
+.about {
+  margin-bottom: 2rem;
+}
+
+
+
+@media (max-width: 767px) {
+  .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+  }
+}
+
+
+.success-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.success-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.success-card {
+  max-width: 700px;
+  width: 90%;
+  margin-top: -200px; /* Adjust the margin value to push the card higher */
+  text-align: center;
+  padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px; /* Adjust the margin value to decrease the spacing */
+}
+
+.place-order-container {
+  margin-top: -70px; /* Adjust the value to reduce the gap */
+}
+@media (max-width: 767px) {
+  .place-order-container {
+    margin-top: -115px; /* Adjust the value as needed */
+  }
+}
+
+
+.button-container button {
+  flex: 1;
+  margin: 0 5px; /* Adjust the margin value to decrease the spacing between buttons */
+}
+
+.password-input {
+  margin-bottom: 25px; /* Increase this value to adjust the spacing */
+}
+
+
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+}
+.form-container {
+  flex: 1;
+  margin-right: -200px;
+}
+
+
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+}
+
+.password-toggle:hover {
+  color: #333;
+}
+.password-input {
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Distribute items along the container */
+  margin-bottom: 20px;
+}
+
+.orders-heading {
+  margin: 0; /* Reset margin to remove default spacing */
+}
+
+.download-button {
+  margin-top: 10px;
+}
+
+.download-button button {
+  background-color: #28a745; /* Green color */
+  color: white;
+}
+
+/* Add to Cart button CSS */
+.btn-for-all-screens:hover,
+.btn-for-all-screens:hover:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.pie-chart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.select-container {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.chart-container {
+  flex: 3;
+}
+
+.product-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+.faqParent {
+  top: 34rem;
+  right: -14rem;
+  width: 70vw;
+  bottom: 20rem;
+  position: relative !important;
+}
+.emptyCartMainParent{
+  height: 24.5rem;
+}
+#fs {
+  font-size: 15px !important;
+  display: block !important;
+  visibility: visible !important;
+}
+.center {
+  left: 50%;
+  top: 50%;
+  transform: translate(85%);
+}
+@media (max-width: 768px) {
+  .center {
+      transform: translate(-8%);
+  }
+}
+.footerFeatures2 {
+  gap: 15rem;
+  top: 233rem;
+  left: 15rem;
+}
+
+.footerFeatures2TextHold {
+  gap: 10.5rem;
+  top: 235rem;
+  left: 20rem;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .mobileview {
+      transform: translate(-45%);
+  }
+}
+.custom-alert {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .custom-alert {
+    width: 150%;
+  }
+}
